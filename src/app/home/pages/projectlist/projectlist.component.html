@@ -1,0 +1,48 @@
+<div id="project-section">
+    <h1>Alle projecten</h1>
+    <div fxLayout="column" fxLayoutAlign="space-between center" fxLayoutGap="4vh">
+        <div class="projectlist" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="2vw">
+            <img src="https://dummyimage.com/450x300/000/fff"/>
+            <div fxLayout="column">
+                <h2 id="projectlist-color-1">{{this.projects[0].projectTitle}}</h2>
+                <p>{{this.projects[0].projectDescription}}</p>
+                <button mat-stroked-button style="background-color: #33B084; color: white;" (click)="goToProject(0)">Bekijk project</button>
+            </div>
+        </div>
+        <div class="projectlist" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="2vw" fxFlexFill>
+            <div fxLayout="column">
+                <h2 id="projectlist-color-2">{{this.projects[1].projectTitle}}</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button mat-stroked-button style="background-color: #F1C400; color: white;" (click)="goToProject(1)">Bekijk project</button>
+            </div>
+            <img src="https://dummyimage.com/450x300/000/fff"/>
+        </div>
+        <div class="projectlist" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="2vw" fxFlexFill>
+            <img src="https://dummyimage.com/450x300/000/fff"/>
+            <div fxLayout="column">
+                <h2 id="projectlist-color-3">{{this.projects[2].projectTitle}}</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button mat-stroked-button style="background-color: #009CBD; color: white;" (click)="goToProject(2)">Bekijk project</button>
+            </div>
+        </div>
+        <div class="projectlist" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="2vw" fxFlexFill>
+            <div fxLayout="column">
+                <h2 id="projectlist-color-4">{{this.projects[3].projectTitle}}</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button mat-stroked-button style="background-color: #FE5000; color: white;" (click)="goToProject(3)">Bekijk project</button>
+            </div>
+            <img src="https://dummyimage.com/450x300/000/fff"/>
+        </div>
+        <div class="projectlist" fxLayout="row" fxLayoutAlign="space-between" fxLayoutGap="2vw" fxFlexFill>
+            <img src="https://dummyimage.com/450x300/000/fff"/>
+            <div fxLayout="column">
+                <h2 id="projectlist-color-1">{{this.projects[4].projectTitle}}</h2>
+                <p>{{this.projects[4].projectDescription}}</p>
+                <button mat-stroked-button style="background-color: #33B084; color: white;" (click)="goToProject(4)">Bekijk project</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+footer {
+    background: #17161A;
+    color: #A5A5A6;
+}
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 57%;
+}
+
+.section-full {
+    padding-top: 30vh;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#line {
+    margin-bottom: 2vh;            
+    border-bottom: 2px solid #222124;
+}
+
+.footer-text {
+    font-size: 12px;
+    padding-bottom: 1vh;
+    text-decoration: none;
+    color: #A5A5A6;
+}
+
+.mat-icon {
+    vertical-align: bottom;
+  }
+
+@media only screen and (max-width: 600px) { 
+    .section {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 95%;
+    }
+}

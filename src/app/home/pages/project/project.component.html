@@ -1,0 +1,10 @@
+<div class="project-section">
+    <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="space-evenly" fxLayoutGap="2vw">
+        <img id="project-image-container" src="{{this.project.projectImageUrl}}"/>
+        <div fxLayout="column" fxLayoutAlign="start start" fxLayoutGap="1vh">
+            <h1>{{this.project.projectTitle}}</h1>
+            <div id="project-description-text">{{this.project.projectDescription}}</div>
+            <button mat-stroked-button>Bekijk demo</button>
+        </div>
+    </div>
+</div>

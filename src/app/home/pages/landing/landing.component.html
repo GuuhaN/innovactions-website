@@ -1,0 +1,206 @@
+<div id="overons" class="section">
+    <div id="placeholder-s1">
+        <div fxLayout="row" fxLayout.lt-sm="column" fxLayout.lt-md="column">
+            <div fxFlex="60" fxFlex.md="40" fxFlex.sm="30">
+                <h1 style="font-size: 48px">Titel</h1>
+                <p id="s1-p">We strive to change the way software systems work, by adding gamification into the mix. 
+                    Working and playing are like a machine. In which work is the engine and playing is the fuel for the engine. 
+                    This working and playing relationship is of most important to achieve the perfect balance in enjoyment and efficiency whilst getting the job done.
+                    Gamification can help improve efficency in your workplace by helping to create enthusiasm and reducing stress for your employees.
+                    Want to discuss the posibilities of gamification within your workplace?</p>
+                <button id="overons-offerte-button" mat-flat-button routerLink="/offerte">Een keer met ons sparren?
+                    ➦</button>
+            </div>
+            <div id="info-container" fxFlex>
+                <img src="https://i.gyazo.com/6fb6fd5daac9856a1af6be08c5f8f738.png" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="diensten" class="section">
+    <div id="placeholder-s2">
+        <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-between stretch">
+            <div id="bg1" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.gt-sm="center start" fxFlex>
+                <h2 class="bg-subtitle">Design & ontwikkeling</h2>
+                <h3 class="bg-title">Software Systemen<br />&#8203;</h3>
+                <div class="bg-container" fxFlexAlign="center">
+                    <img src="../../..//../assets/images/Webapps-icon-home.png">
+                </div>
+                <div class="bg-footer" fxFlexAlign="center">De combinatie tussen plezier en efficientie</div>
+            </div>
+            <div id="bg2" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.gt-sm="center start" fxFlex>
+                <h2 class="bg-subtitle">Design & ontwikkeling</h2>
+                <h3 class="bg-title">Web applicaties<br />&#8203;</h3>
+                <div class="bg-container" fxFlexAlign="center">
+                    <img src="../../..//../assets/images/Software-icon-home.png">
+                </div>
+                <div class="bg-footer" fxFlexAlign="center">Process versnellende systemen voor een scherpe prijs
+                </div>
+            </div>
+            <div id="bg3" fxLayout="column" fxLayoutAlign="center center" fxLayoutAlign.gt-sm="center start" fxFlex>
+                <h2 class="bg-subtitle">Design & ontwikkeling</h2>
+                <h3 class="bg-title">Gamificatie toepassingen & tools</h3>
+                <div class="bg-container" fxFlexAlign="center">
+                    <img src="../../..//../assets/images/gamification-icon-home.png">
+                </div>
+                <div class="bg-footer" fxFlexAlign="center">Een complex systeem zo beschikbaar via het web</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="cases" class="section">
+    <div id="placeholder-s3">
+        <div id="cases-text">Cases</div>
+        <h1>Onze recente projecten</h1>
+        <mat-grid-list [cols]="casesBreakpoint" rowHeight="20em" (window:resize)="onResize($event)">
+            <mat-grid-tile *ngFor="let project of projects">
+                <div fxLayout="column" fxLayoutAlign="center">
+                    <button class="cases-button" (click)="goToProject(project.id)" mat-flat-button>
+                        <div class="cases-container">
+                            <img fxFlexFill src="https://dummyimage.com/420x200/000/fff" />
+                        </div>
+                        <div fxFlexFill>
+                            <div class="cases-title">{{project.projectTitle}}</div>
+                            <div class="cases-subtitle">Show project</div>
+                        </div>
+                    </button>
+                </div>
+            </mat-grid-tile>
+            <mat-grid-tile>
+                <div fxLayout="column" fxLayoutAlign="center">
+                    <button class="cases-button" mat-flat-button routerLink="/projects">
+                        <div class="cases-container">
+                            <img fxFlexFill src="https://dummyimage.com/420x200/000/fff" />
+                        </div>
+                        <div fxFlexFill>
+                            <div class="cases-title">Meer projecten</div>
+                            <div class="cases-subtitle">Show others</div>
+                        </div>
+                    </button>
+                </div>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>
+<div id="partners" class="section-full">
+    <div id="placeholder-s4">
+        <div class="section">
+            <mat-grid-list [cols]="partnerBreakpoint" rowHeight="4:2" (window:resize)="onResize($event)" >
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="../../../../assets/images/logo-vobesoft.png" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="../../../../assets/images/nccbggrey.png" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="../../../../assets/images/Thebe.png"/>
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="../../../../assets/images/Vitalis.png" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <div class="partners-container">
+                        <img src="https://dummyimage.com/190x80/000/fff" />
+                    </div>
+                </mat-grid-tile>
+            </mat-grid-list>
+        </div>
+    </div>
+</div>
+<div id="testimonials" class="section">
+    <div id="placeholder-s5">
+        <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutGap.lt-sm="4px">
+            <div fxFlex="50">
+                <h5>Testimonials</h5>
+                <h1 id="testimonial-text">Wat onze klanten over ons zeggen</h1>
+            </div>
+            <div id="testimonial-slider">
+                <swiper fxFlex [slidesPerView]="1" (swiper)="onSwiper($event)" (slideChange)="onSlideChange()"
+                [pagination]="{ clickable: false, dynamicBullets: true }" [loop]="true" [autoplay]="{delay: 10000, disableOnInteraction: false}">
+                <ng-template swiperSlide>
+                    <h4>Geweldige eindresultaat</h4>
+                    <div>"Dankzij de webapplicatie die Retrii voor ons heeft gebouwd hebben we veel
+                        duidelijker een overzicht over onze interne bedrijfsprocessen. Ook was de input
+                        van Retrii erg belangrijk om dit product tot een succes te maken."</div>
+                    <p><b>Laura Smits</b></p>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <h4>Communicatief sterk</h4>
+                    <div>"Door de goede communicatie met Retrii is ons product beter dan verwacht! Wij 
+                        zijn uitermate positief over hun service en willen graag verder zaken doen met Retrii!"</div>
+                    <p><b>Simon van Gooi</b></p>
+                </ng-template>
+                <ng-template swiperSlide>
+                    <h4>Professioneel bedrijf</h4>
+                    <div>"Stellen hun professioneel op en dat is ook terug te zien in het eindproduct.
+                        Ze hebben een sterk & communicatief team die ervoor gezorgd heeft dat wij vaste klanten
+                        blijven!"</div>
+                    <p><b>Stephan Soss</b></p>
+                </ng-template>
+            </swiper>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contact" class="section-full">
+    <div id="placeholder-s4">
+        <div class="section" fxLayout="column" fxLayout.lt-lg="column" fxLayoutGap.lt-sm="12px">
+            <div fxFlexAlign.lt-sm="center">Laten we praten.</div>
+            <div>
+                <div fxLayout="row" fxLayout.lt-lg="column" fxLayoutAlign="space-between center">
+                    <div >
+                        <h1>Heb je een idee?</h1>
+                    </div>
+                    <button id="contact-button" mat-stroked-button color="basic" routerLink="/offerte">Kom een keer sparren!</button>
+                </div>
+            </div>
+            <div id="line"></div>
+            <div id="contact-text">Wij hebben de <b>beste kennis</b> om jouw project te realiseren met een <b>prachtige
+                    user interface</b>
+                en <b>geweldige gebruikerservaring</b>.</div>
+        </div>
+    </div>
+</div>

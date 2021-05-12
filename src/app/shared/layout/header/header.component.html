@@ -1,0 +1,44 @@
+<div class="section" fxHide.lt-lg>
+    <mat-toolbar>
+        <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="2vw" fxFlex>
+            <span fxFlex (click)="goToHome()" style="cursor: pointer;">InnoVactions</span>
+            <a routerLink="/" mat-button>Home</a>
+            <a mat-button pageScroll routerLink="/" href="#overons" [pageScrollDuration]="800"
+                [pageScrollEasing]="myEasing">Over ons</a>
+            <a mat-button pageScroll routerLink="/" href="#diensten" [pageScrollDuration]="800"
+                [pageScrollEasing]="myEasing">Diensten</a>
+            <a mat-button pageScroll routerLink="/" href="#cases" [pageScrollDuration]="800"
+                [pageScrollEasing]="myEasing">Cases</a>
+            <a mat-button pageScroll routerLink="/" href="#contact" [pageScrollDuration]="800"
+                [pageScrollEasing]="myEasing" [pageScrollOffset]="200">Contact</a>
+            <button id="header-button" (click)="goToOfferte()" mat-flat-button>Keer sparren?</button>
+        </div>
+    </mat-toolbar>
+</div>
+
+<mat-toolbar class="section" fxHide.gt-md>
+    <div fxLayout="row" fxLayoutAlign="end" fxFlex>
+        <span fxFlex><a>InnoVactions</a></span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+</mat-toolbar>
+
+
+<mat-sidenav #sidenav (click)="sidenav.toggle()">
+    <div fxLayout="column" fxLayoutAlign="start" fxLayoutGap="2vw" fxFlex>
+        <span fxLayoutAlign="center end">InnoVactions</span>
+        <a routerLink="/" mat-button>Home</a>
+        <a mat-button pageScroll routerLink="/" href="#overons" [pageScrollDuration]="800"
+            [pageScrollEasing]="myEasing">Over ons</a>
+        <a mat-button pageScroll routerLink="/" href="#diensten" [pageScrollDuration]="800"
+            [pageScrollEasing]="myEasing">Diensten</a>
+        <a mat-button pageScroll routerLink="/" href="#cases" [pageScrollDuration]="800"
+            [pageScrollEasing]="myEasing">Cases</a>
+        <a mat-button pageScroll routerLink="/" href="#contact" [pageScrollDuration]="800" [pageScrollEasing]="myEasing"
+            [pageScrollOffset]="200">Contact</a>
+        <button id="header-button" (click)="goToOfferte()" mat-flat-button color="primary">Keer sparren?</button>
+    </div>
+</mat-sidenav>

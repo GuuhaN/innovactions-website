@@ -1,0 +1,110 @@
+<!-- <div id="offerte-section">
+    <mat-horizontal-stepper [linear]="isLinear" [hidden]="true" #stepper>
+        <mat-step>
+            <div id="offerte-section" fxLayout="column">
+                <h1 class="head-text" fxFlexAlign="center">Waar wil je een keer over sparren?</h1>
+                <form [formGroup]="applicationTypeFormGroup">
+                    <mat-grid-list [cols]="breakpoint" (window:resize)="onResize($event)" rowHeight="20em">
+                        <mat-grid-tile>
+                            <button matStepperNext mat-button>
+                                <div fxLayout="column">
+                                    <div class="offerte-grid-container">
+                                        <img src="https://dummyimage.com/800x800/000/fff" />
+                                    </div>
+                                    <h2 class="offerte-grid-text">Software <br /> Ontwikkeling</h2>
+                                </div>
+                            </button>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <button matStepperNext mat-button>
+                                <div fxLayout="column">
+                                    <div class="offerte-grid-container">
+                                        <img src="https://dummyimage.com/800x800/000/fff" />
+                                    </div>
+                                    <h2 class="offerte-grid-text">Web <br /> Application</h2>
+                                </div>
+                            </button>
+                        </mat-grid-tile>
+                        <mat-grid-tile>
+                            <button matStepperNext mat-button>
+                                <div fxLayout="column">
+                                    <div class="offerte-grid-container">
+                                        <img src="https://dummyimage.com/800x800/000/fff" />
+                                    </div>
+                                    <h2 class="offerte-grid-text"><br />Gamification </h2>
+                                </div>
+                            </button>
+                        </mat-grid-tile>
+                    </mat-grid-list>
+                </form>
+            </div>
+        </mat-step>
+        <mat-step>
+            <div id="offerte-section" fxLayout="column">
+                <h1 fxFlexAlign="center">Heb je al wat eisen aan het systeem?</h1>
+            </div>
+        </mat-step>
+    </mat-horizontal-stepper>
+</div> -->
+
+<div class="offerte-section">
+    <div fxLayoutAlign="center" fxFlexFill>
+        <mat-horizontal-stepper [linear]="isLinear" [hidden]="true" #stepper>
+            <mat-step>
+                <h1 class="head-text" fxLayoutAlign="center">Waar wil je een keer over sparren?</h1>
+                <div class="offerte-content" fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutAlign="space-evenly"
+                    fxLayoutAlign.xs="flex-start" fxLayoutGap="32px" fxFlexFill>
+                    <div fxLayout="column wrap" fxLayoutAlign="center">
+                        <button matStepperNext mat-button (click)="offerteType('Software Application')">
+                            <div class="offerte-grid-container">
+                                <img src="https://dummyimage.com/300x300/000/fff" />
+                            </div>
+                            <h2>Software Application</h2>
+                        </button>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="center">
+                        <button matStepperNext mat-button (click)="offerteType('Web Application')">
+                            <div class="offerte-grid-container">
+                                <img src="https://dummyimage.com/300x300/000/fff" />
+                            </div>
+                            <h2>Web Application</h2>
+                        </button>
+                    </div>
+                    <div fxLayout="column wrap" fxLayoutAlign="center">
+                        <button matStepperNext mat-button (click)="offerteType('Gamification')">
+                            <div class="offerte-grid-container">
+                                <img src="https://dummyimage.com/300x300/000/fff" />
+                            </div>
+                            <h2>Gamification</h2>
+                        </button>
+                    </div>
+                </div>
+            </mat-step>
+            <mat-step>
+                <h1 class="head-text" fxLayoutAlign="center">Waar wil je een keer over sparren?</h1>
+                <form [formGroup]="offerteForm">
+                    <div fxLayout="column" class="offerte-form">
+                        <mat-form-field>
+                            <mat-label>Email</mat-label>
+                            <input type="email" matInput formControlName="email" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                            <mat-label>Bericht</mat-label>
+                            <textarea formControlName="offerteDescription" matInput cdkTextareaAutosize
+                            #autosize="cdkTextareaAutosize"
+                            cdkAutosizeMinRows="20" required></textarea>
+                        </mat-form-field>
+                        <div fxLayout="row" fxLayoutAlign="space-between">
+                            <button matStepperPrevious type="reset" mat-button>Terug</button>
+                            <button matStepperNext type="submit" [disabled]="!this.offerteForm.valid" (click)="this.sendForm()" mat-button>Stuur offerte</button>
+                        </div>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step>
+                <h1 class="head-text" fxLayoutAlign="center">Bedankt voor je offerte!</h1>
+                <h3 fxLayoutAlign="center">Wij zullen snel met jou contact opnemen!</h3>
+            </mat-step>
+        </mat-horizontal-stepper>
+    </div>
+</div>

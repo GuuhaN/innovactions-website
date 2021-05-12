@@ -28,7 +28,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/fonts/Myriad Pro Light/font-file.css",
+              "src/assets/fonts/Myriad Pro Regular/font-file.css",
+              "src/assets/fonts/Myriad Pro Semibold/font-file.css"
             ],
             "scripts": []
           },
